@@ -81,17 +81,15 @@ int main()
     };
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-
    
-
     VertexArray va;
     VertexBuffer vb(vertices, sizeof(vertices));
     VertexBufferLayout vbl;
     vbl.Push<float>(2);
     va.AddBuffer(vb, vbl);
-
-
     IndexBuffer ib(indices, sizeof(indices));
+
+
     // color attribute
     // texture coord attribute
     //glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
